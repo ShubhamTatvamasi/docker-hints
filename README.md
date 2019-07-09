@@ -2,6 +2,7 @@
 
 remove all exited containers
 ```bash
+docker container prune -f
 docker rm $(docker ps -a -f status=exited -q)
 ```
 
