@@ -8,6 +8,7 @@ docker rm $(docker ps -a -f status=exited -q)
 
 remove all dangling images
 ```bash
+docker image prune -f
 docker rmi $(docker images -q -f dangling=true)
 ```
 
