@@ -1,5 +1,12 @@
 # docker-hints
 
+Remove all tags on a docker image:
+```bash
+docker images shubhamtatvamasi/nginx --quiet | while read line ; do
+  docker rmi $line --force
+done
+```
+
 remove all exited containers
 ```bash
 docker container prune -f
