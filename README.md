@@ -3,6 +3,9 @@
 filter images:
 ```bash
 docker images -f reference='shubhamtatvamasi/*:*'
+
+# delete all images
+docker rmi $(docker images -f reference='shubhamtatvamasi/*:*' -q) --force
 ```
 
 Remove all tags on a docker image:
