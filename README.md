@@ -1,5 +1,10 @@
 # docker-hints
 
+filter images:
+```bash
+docker images -f reference='shubhamtatvamasi/*:*'
+```
+
 Remove all tags on a docker image:
 ```bash
 docker images shubhamtatvamasi/nginx --quiet | while read line ; do
