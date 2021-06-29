@@ -1,5 +1,10 @@
 # docker-hints
 
+delete docker interface
+```bash
+ip link delete docker0
+```
+
 filter images:
 ```bash
 docker images -f reference='shubhamtatvamasi/*:*'
