@@ -2,7 +2,8 @@
 
 delete docker interface
 ```bash
-ip link delete docker0
+sudo ip link delete docker0
+sudo systemctl restart docker.socket
 ```
 
 filter images:
